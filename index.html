@@ -6,23 +6,84 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>O Mistério da Cordilheira</title>
 </head>
 <body>
     <main>
+        <!-- Passo 0 - Introdução -->
         <div class="passo ativo" id="passo-0">
-            <img src="cenario-passo0.png" alt="">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+            <img src="img/cenario-chile.png" alt="Montanhas do Chile">
+            <p>Durante uma viagem de estudos no Chile, você encontra um diário antigo descrevendo um artefato escondido na Cordilheira dos Andes. Segundo o autor, esse artefato teria o poder de revelar o passado de antigas civilizações sul-americanas.</p>
+            <button class="btn-proximo" data-proximo="1">Investigar Santiago</button>
+            <button class="btn-proximo" data-proximo="2">Explorar o Deserto do Atacama</button>
         </div>
+
+        <!-- Passo 1 -->
         <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+            <p>Em Santiago, você encontra uma velha biblioteca onde há registros sobre uma expedição que partiu rumo ao Brasil. Um mapa aponta para Mendoza, na fronteira argentina.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir para Mendoza</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para o hotel</button>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="passo" id="passo-2">
+            <p>No Atacama, você encontra inscrições misteriosas em uma caverna. Elas mencionam um símbolo que também aparece em um museu em Buenos Aires.</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para Buenos Aires</button>
+            <button class="btn-proximo" data-proximo="6">Voltar para Santiago</button>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="passo" id="passo-3">
+            <p>Em Mendoza, uma guia local lhe entrega um fragmento de pedra com uma inscrição: “O próximo passo está nas águas do Prata”.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir o Rio da Prata até Buenos Aires</button>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-hotel.png" alt="Retornando ao hotel">
+            <p>Você decide que a jornada é perigosa demais e retorna ao hotel. Mas à noite, não consegue parar de pensar no artefato perdido...</p>
+        </div>
+
+        <!-- Passo 5 -->
+        <div class="passo" id="passo-5">
+            <p>Em Buenos Aires, você descobre uma antiga carta escrita por um explorador brasileiro mencionando que o artefato foi levado para São Paulo.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para São Paulo</button>
+        </div>
+
+        <!-- Passo 6 -->
+        <div class="passo" id="passo-6">
+            <p>De volta a Santiago, você encontra uma passagem ferroviária antiga ligando a cidade à Argentina. É o caminho mais rápido até o artefato.</p>
+            <button class="btn-proximo" data-proximo="3">Pegar o trem para Mendoza</button>
+        </div>
+
+        <!-- Passo 7 -->
+        <div class="passo" id="passo-7">
+            <p>Depois de uma longa viagem, você chega a São Paulo. As pistas o levam até o Museu do Ipiranga, onde o artefato pode estar escondido.</p>
+            <button class="btn-proximo" data-proximo="9">Investigar o interior do museu</button>
+            <button class="btn-proximo" data-proximo="10">Procurar nos jardins</button>
+        </div>
+
+        <!-- Passo 9 -->
+        <div class="passo" id="passo-9">
+            <p>Dentro do museu, você encontra uma passagem secreta sob uma escada antiga. Lá está o artefato: uma esfera dourada coberta de símbolos andinos.</p>
+            <button class="btn-proximo" data-proximo="11">Estudar o artefato</button>
+        </div>
+
+        <!-- Passo 10 -->
+        <div class="passo" id="passo-10">
+            <p>Nos jardins, você apenas encontra uma fonte com estátuas históricas. Nenhum sinal do artefato.</p>
+            <button class="btn-proximo" data-proximo="9">Entrar no museu</button>
+        </div>
+
+        <!-- Passo 11 -->
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-artefato.png" alt="Artefato antigo dourado">
+            <p>O artefato brilha em suas mãos, revelando inscrições sobre antigas rotas entre os povos dos Andes e do Brasil. Sua descoberta muda a história da arqueologia sul-americana para sempre!</p>
         </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
+
